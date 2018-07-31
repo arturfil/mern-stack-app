@@ -17,8 +17,8 @@ class Register extends Component {
     };
 
     // Could also write the following:
-    this.onSubmit = this.onSubmit.bind(this);
-    this.onSubmit = this.onSubmit.bind(this);
+    // this.onSubmit = this.onSubmit.bind(this);
+    // this.onSubmit = this.onSubmit.bind(this);
   }
 
   componentWillReceiveProps = nextProps => {
