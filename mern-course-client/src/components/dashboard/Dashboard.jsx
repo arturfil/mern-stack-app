@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { getCurrentProfile, deleteAccount } from '../../actions/profileActions';
 import PropTypes from 'prop-types';
+import Experience from './Experience';
 
 // import functional components
 import Spinner from '../common/Spinner';
@@ -35,7 +36,7 @@ class Dashboard extends Component {
               <Link to={`/profile/${profile.handle}`}> {user.name} </Link>
             </p>
             <ProfileActions />
-            {/* TODO: exp and edu */}
+            <Experience experience={profile.experience} />
             <div style={{ marginBottom: '60px' }}>
               <button
                 onClick={this.onDeleteClick.bind(this)}
