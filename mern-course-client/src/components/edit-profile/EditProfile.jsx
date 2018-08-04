@@ -226,11 +226,11 @@ class CreateProfile extends Component {
                   info="City or city & state (eg. Miami, FL)"
                 />
                 <TextFieldGroup
-                  placeholder="Company"
-                  name="company"
-                  value={this.state.company}
+                  placeholder="Website"
+                  name="website"
+                  value={this.state.website}
                   onChange={this.onChange}
-                  error={errors.company}
+                  error={errors.website}
                   info="Could be your own company or one you work for"
                 />
                 <TextFieldGroup
