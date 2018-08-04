@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom';
 import { PropTypes } from 'prop-types';
 import { connect } from 'react-redux';
 
+import './Landing.css';
+
 class Landing extends Component {
   componentDidMount = () => {
     if (this.props.auth.isAuthenticated) {
@@ -17,11 +19,11 @@ class Landing extends Component {
           <div className="container">
             <div className="row">
               <div className="col-md-12 text-center">
-                <h1 className="display-3 mb-4">Developer Connector</h1>
+                <h2 className="display-3 mb-4">Developer Connector</h2>
                 <p className="lead">
                   {' '}
-                  Create a developer profile/portfolio, share posts and get help
-                  from other developers
+                  Create a developer profile or a portfolio, share posts and get
+                  help from other developers
                 </p>
                 <hr />
                 <Link to="/register" className="btn btn-lg btn-info mr-2">
