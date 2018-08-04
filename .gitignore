@@ -1,2 +1,4 @@
 /node_modules
 mern-course-client/yarn.lock
+/config/keys_dev.js
+package-lock.json
